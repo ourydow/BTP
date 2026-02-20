@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="fr" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BTP & Énergie Plus</title>
+    <link href="./src/output.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+</head>
+<body class="bg-white text-gray-800 font-sans">
+
+    <header id="home" class="sticky top-0 z-50 bg-blue-900 text-white shadow-lg w-full">
+        <div class="max-w-7xl mx-auto px-4 py-3 flex justify-between items-center">
+            <div class="flex items-center gap-2 group cursor-pointer">
+                <div class="w-8 h-8 md:w-10 md:h-10 bg-orange-500 rounded-full flex items-center justify-center font-bold group-hover:rotate-12 transition-transform text-sm md:text-base">BTP</div>
+                <span class="font-bold text-base md:text-lg tracking-tight">BTP & Énergie Plus</span>
+            </div>
+            <nav class="hidden md:flex gap-6 lg:gap-8 items-center">
+                <a href="#home" class="nav-link active-link">Accueil</a>
+                <a href="#services" class="nav-link">Services</a>
+                <a href="#projets" class="nav-link">Projets</a>
+                <a href="#contact" class="nav-link bg-orange-500 px-4 py-2 rounded-lg text-white hover:bg-orange-600 shadow-md">Contact</a>
+            </nav>
+
+            <button id="menuBtn" class="md:hidden text-2xl p-2 focus:outline-none" aria-label="Ouvrir le menu">☰</button>
+        </div>
+
+        <div id="navMenu" class="hidden md:hidden bg-blue-900 absolute top-full left-0 w-full border-t border-blue-800 p-6 space-y-6 flex flex-col items-center shadow-xl">
+            <a href="#home" class="mobile-link">Accueil</a>
+            <a href="#services" class="mobile-link">Services</a>
+            <a href="#projets" class="mobile-link">Projets</a>
+            <a href="#contact" class="mobile-link text-orange-400 border-none">Contact</a>
+        </div>
+    </header>
+
+    <section class="relative min-h-[70vh] md:min-h-[85vh] flex items-center justify-center bg-gradient-to-br from-blue-900 via-blue-800 to-orange-900 text-white py-12 px-4">
+        <div class="text-center z-10 max-w-4xl mx-auto" data-aos="fade-up">
+            <h1 class="text-3xl sm:text-5xl md:text-7xl font-extrabold mb-6 leading-tight">
+                Construisons <br class="md:hidden"><span class="text-orange-500 font-black">Votre Avenir</span>
+            </h1>
+            <p class="text-base sm:text-lg md:text-2xl mb-10 max-w-2xl mx-auto opacity-90 font-light">
+                BTP, Énergies et Solutions Durables : l'expertise au service du développement en Afrique.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+                <a href="#contact" class="w-full sm:w-auto bg-orange-500 hover:bg-orange-600 px-8 py-4 rounded-full font-bold text-lg transition-all transform hover:scale-105 shadow-xl text-center">Demander un Devis</a>
+                <a href="#projets" class="w-full sm:w-auto border-2 border-white hover:bg-white hover:text-blue-900 px-8 py-4 rounded-full font-bold text-lg transition-all text-center">Nos travaux</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-16 px-4 bg-gray-50 overflow-hidden">
+        <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-10 items-center">
+            <div data-aos="fade-right">
+                <h2 class="text-orange-500 font-bold tracking-widest uppercase text-xs mb-2">Expertise de Terrain</h2>
+                <h2 class="text-2xl md:text-4xl font-bold text-blue-900 mb-6">Qui Sommes-Nous ?</h2>
+                <p class="text-gray-700 mb-8 leading-relaxed text-sm md:text-lg">Depuis 2010, <strong>BTP & Énergie Plus</strong> accompagne les entrepreneurs et ménages dans leurs projets de construction.</p>
+                <div class="grid grid-cols-2 gap-4">
+                    <div class="border-l-4 border-orange-500 pl-4">
+                        <span class="block text-2xl md:text-3xl font-bold text-blue-900">10k+</span>
+                        <span class="text-[10px] md:text-xs text-gray-500 uppercase">Clients</span>
+                    </div>
+                    <div class="border-l-4 border-orange-500 pl-4">
+                        <span class="block text-2xl md:text-3xl font-bold text-blue-900">500+</span>
+                        <span class="text-[10px] md:text-xs text-gray-500 uppercase">Projets</span>
+                    </div>
+                </div>
+            </div>
+            <div class="relative mt-8 md:mt-0" data-aos="fade-left">
+                <div class="bg-blue-900 h-56 md:h-80 rounded-2xl shadow-2xl flex items-center justify-center text-white text-center p-6 transform rotate-2 hover:rotate-0 transition-transform duration-500">
+                    <p class="font-bold">[Image Entreprise]</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="py-16 px-4">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-12" data-aos="fade-up">
+                <h2 class="text-3xl md:text-4xl font-bold text-blue-900 mb-4">Nos Services Experts</h2>
+                <div class="w-16 h-1 bg-orange-500 mx-auto rounded-full"></div>
+            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="group bg-white p-6 rounded-2xl shadow-md border border-gray-100" data-aos="zoom-in">
+                    <div class="text-4xl mb-4">🏗️</div>
+                    <h3 class="font-bold text-xl text-blue-900 mb-3 group-hover:text-orange-500 transition-colors">Construction</h3>
+                    <p class="text-sm text-gray-600 leading-relaxed">Bâtiments résidentiels et industriels selon les normes internationales.</p>
+                </div>
+                <div class="group bg-white p-6 rounded-2xl shadow-md border border-gray-100" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="text-4xl mb-4">🔨</div>
+                    <h3 class="font-bold text-xl text-blue-900 mb-3 group-hover:text-orange-500 transition-colors">Rénovation</h3>
+                    <p class="text-sm text-gray-600 leading-relaxed">Peinture, électricité et design d'intérieur sur mesure pour vos espaces.</p>
+                </div>
+                <div class="group bg-white p-6 rounded-2xl shadow-md border border-gray-100 sm:col-span-2 lg:col-span-1" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="text-4xl mb-4">🛣️</div>
+                    <h3 class="font-bold text-xl text-blue-900 mb-3 group-hover:text-orange-500 transition-colors">Travaux Publics</h3>
+                    <p class="text-sm text-gray-600 leading-relaxed">Infrastructures routières et aménagement urbain pour les collectivités.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-16 px-4 bg-blue-900 text-white overflow-hidden">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="text-2xl md:text-4xl font-bold text-center mb-12">Gaz Domestique</h2>
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 w-full">
+                <div class="bg-white/5 p-6 md:p-10 rounded-3xl border border-white/10" data-aos="fade-right">
+                    <h3 class="text-xl font-bold text-orange-400 mb-6 flex items-center gap-3">🔥 Nos Produits</h3>
+                    <ul class="space-y-4 opacity-90 text-sm md:text-base">
+                        <li class="flex items-center gap-2"><span class="text-orange-500">✔</span> Bouteilles 6kg & 12kg</li>
+                        <li class="flex items-center gap-2"><span class="text-orange-500">✔</span> Format Industriel 25kg</li>
+                        <li class="flex items-center gap-2"><span class="text-orange-500">✔</span> Accessoires & Détendeurs</li>
+                    </ul>
+                </div>
+                <div class="bg-white/5 p-6 md:p-10 rounded-3xl border border-white/10" data-aos="fade-left">
+                    <h3 class="text-xl font-bold text-orange-400 mb-6 flex items-center gap-3">🚚 Nos Services</h3>
+                    <ul class="space-y-4 opacity-90 text-sm md:text-base">
+                        <li class="flex items-center gap-2"><span class="text-orange-500">✔</span> Livraison Rapide 7j/7</li>
+                        <li class="flex items-center gap-2"><span class="text-orange-500">✔</span> Installation Sécurisée</li>
+                        <li class="flex items-center gap-2"><span class="text-orange-500">✔</span> Service Client Réactif</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-16 px-4 bg-gray-50">
+        <div class="max-w-4xl mx-auto">
+            <div class="bg-white rounded-3xl shadow-2xl overflow-hidden flex flex-col md:grid md:grid-cols-5 w-full">
+                <div class="md:col-span-2 bg-blue-900 p-8 text-white">
+                    <h2 class="text-2xl font-bold mb-4">Contactez-nous</h2>
+                    <p class="opacity-70 mb-8 text-sm">Une question ? Un devis ? Notre équipe vous répond rapidement.</p>
+                    <div class="space-y-4 text-sm">
+                        <p>📍 Dakar, Sénégal</p>
+                        <p>📞 +221 77 123 45 67</p>
+                    </div>
+                </div>
+                <form class="md:col-span-3 p-8 space-y-5">
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                        <input type="text" placeholder="Nom" class="w-full border-b border-gray-200 py-2 focus:border-orange-500 outline-none text-sm">
+                        <input type="email" placeholder="Email" class="w-full border-b border-gray-200 py-2 focus:border-orange-500 outline-none text-sm">
+                    </div>
+                    <select class="w-full border-b border-gray-200 py-2 focus:border-orange-500 outline-none bg-transparent text-sm">
+                        <option>Service souhaité</option>
+                        <option>Construction</option>
+                        <option>Gaz</option>
+                    </select>
+                    <textarea placeholder="Message" rows="2" class="w-full border-b border-gray-200 py-2 focus:border-orange-500 outline-none text-sm"></textarea>
+                    <button class="w-full bg-orange-500 text-white font-bold py-4 rounded-xl hover:bg-orange-600 transition shadow-lg">Envoyer</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-blue-950 text-white py-10 px-4 text-center">
+        <p class="font-bold mb-2">BTP & Énergie Plus</p>
+        <p class="opacity-50 text-[10px]">© 2026 Tous droits réservés.</p>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({ duration: 800, once: true });
+
+        const menuBtn = document.getElementById('menuBtn');
+        const navMenu = document.getElementById('navMenu');
+
+        menuBtn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            navMenu.classList.toggle('hidden');
+        });
+
+        // Fermer le menu si on clique ailleurs sur l'écran
+        document.addEventListener('click', () => navMenu.classList.add('hidden'));
+        
+        document.querySelectorAll('.mobile-link').forEach(link => {
+            link.addEventListener('click', () => navMenu.classList.add('hidden'));
+        });
+    </script>
+</body>
+</html>
